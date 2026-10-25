@@ -37,6 +37,8 @@ vector<int> split_string(const string& str) {
     return words;
 }
 
+// https://atcoder.jp/contests/dp/tasks/dp_b
+
 int main() {
     int n = 0, k = 0;
     cin >> n >> k;
