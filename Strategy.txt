@@ -1,0 +1,59 @@
+State:
+dp[...] means __________________________________
+
+Choices:
+________________________________________________
+
+Transition:
+________________________________________________
+
+Base/impossible states:
+________________________________________________
+
+Evaluation order:
+________________________________________________
+
+Final answer:
+________________________________________________
+
+Complexity:
+number of states × work per state = _____________
+
+
+
+=======================================================================
+
+### State
+
+* **Meaning:** The parameters that uniquely identify a distinct subproblem.
+* **Fibonacci Example:** `dp[i]` means the $i$-th Fibonacci number.
+
+### Choices
+
+* **Meaning:** The decisions you can make at any given state to move between subproblems.
+* **Fibonacci Example:** To compute the current value, you choose to combine the values of the previous two sequence steps.
+
+### Transition
+
+* **Meaning:** The recurrence relation or formula that connects the current state to dependent states based on your choices.
+* **Fibonacci Example:** `dp[i] = dp[i-1] + dp[i-2]`
+
+### Base/impossible states
+
+* **Meaning:** The foundational subproblems with direct, known answers (base cases), and any invalid/unreachable states that must be avoided or assigned sentinel values.
+* **Fibonacci Example:** `dp[0] = 0` and `dp[1] = 1`.
+
+### Evaluation order
+
+* **Meaning:** The computational direction (bottom-up loops or top-down memoized recursion) required to ensure dependencies are solved before they are accessed.
+* **Fibonacci Example:** Loop upward from $i = 2$ to $n$.
+
+### Final answer
+
+* **Meaning:** The specific state or combination of states in your DP table that holds the solution to the original problem.
+* **Fibonacci Example:** `dp[n]`
+
+### Complexity
+
+* **Meaning:** The total time efficiency, calculated by multiplying the total number of states by the transition work done per state.
+* **Fibonacci Example:** $n$ states $\times$ $O(1)$ work per state = $O(n)$ time complexity.
